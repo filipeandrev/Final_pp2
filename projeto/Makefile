@@ -2,9 +2,11 @@ server:
 	cp .env.example .env
 	composer install
 	php artisan key:generate
+        npm install
 	nano .env
+        php artisan migrate:fresh --seed
 	php artisan serve
-
+        
 conf-git-filipe:
 	git config --global user.name "filipeandrev"
 	git config --global user.email "filipe.andrev7@gmail.com"
