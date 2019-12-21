@@ -12,3 +12,8 @@ conf-git-filipe:
 conf-git-leonardo:
 	git config --global user.name "leonardolfp"
 	git config --global user.email "leonardolfp15@gmail.com"
+
+conf-git-aline:
+        git config --global user.name "alinevenceslau"
+        git config --global user.email "alineepecris79@gmail.com"
+
