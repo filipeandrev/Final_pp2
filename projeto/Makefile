@@ -19,3 +19,7 @@ conf-git-aline:
         git config --global user.name "alinevenceslau"
         git config --global user.email "alineepecris79@gmail.com"
 
+conf-git-guilherme:
+        git config --global user.name "GuilhermeH6"
+        git config --global user.email "guilhermeholanda870@gmail.com"
+
