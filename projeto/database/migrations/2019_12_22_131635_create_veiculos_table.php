@@ -15,15 +15,15 @@ class CreateVeiculosTable extends Migration
     {
         Schema::create('veiculos', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->enum('carro', 'moto', 'bicicleta');
+            $table->enum('tipo', ['carro', 'moto', 'bicicleta']);
             $table->unsignedBigInteger('fk_funcionarios_id');
             $table->unsignedBigInteger('fk_alunos_id');
             $table->unsignedBigInteger('fk_estacionamentos_id');
 
             #foreign keys
-            $table->foreign('fk_funcionarios_id')->references('id')->on('funcionario');
+            $table->foreign('fk_funcionarios_id')->references('id')->on('funcionarios');
             $table->foreign('fk_alunos_id')->references('id')->on('alunos');
-            $table->foreign('fk_estacionamentos_id')->references('id')->on('estacionamento');
+            $table->foreign('fk_estacionamentos_id')->references('id')->on('estacionamentos');
             $table->timestamps();
         });
     }
