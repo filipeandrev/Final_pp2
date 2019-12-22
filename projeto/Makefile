@@ -23,3 +23,7 @@ conf-git-guilherme:
         git config --global user.name "GuilhermeH6"
         git config --global user.email "guilhermeholanda870@gmail.com"
 
+conf-git-Ricardo:
+        git config --global user.name "ricardomlp"
+        git config --global user.email "cranioscaner@gmail.com"
+
