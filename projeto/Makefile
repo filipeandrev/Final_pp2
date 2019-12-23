@@ -27,3 +27,7 @@ conf-git-Ricardo:
         git config --global user.name "ricardomlp"
         git config --global user.email "cranioscaner@gmail.com"
 
+conf-git-ju:
+        git config --global user.name "jucielefernandes"
+        git config --global user.email "juciele.bol@gmail.com"
+
