@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
     <title>IF Parking</title>
 
 
@@ -33,9 +35,27 @@
 <main>
     @yield('content')
 </main>
-
-
-
-
-
+<footer class="mt-5 bg-dark">
+  <div class="container pt-4">
+      <div class="row">
+          <div class="col-sm-4">
+              <h5 class="link-color">Sobre Nós</h5>
+              <a href="{{ asset('#') }}">Desenvolvedores</a>
+          </div>
+          <div class="col-sm-4">
+              <h5 class="link-color">Suporte</h5>
+              <a href="{{ asset('#') }}">Ajuda</a>
+          </div>
+          <div class="col-sm-4 info">
+              <h5 class="link-color text-center">Informações</h5>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque, odio laborum voluptas quisquam accusantium facilis. Optio fugiat, praesentium omnis sequi sapiente hic vel eligendi molestiae quia laboriosam velit maxime.</p>
+          </div>
+      </div>
+  </div>
+  <div class="row ml-4">
+    <div>
+      <p class="text-muted">© 2020 IF Parking </p>
+    </div>  
+  </div>
+</footer>
 </body> 
