@@ -48,13 +48,13 @@
           </div>
           <div class="col-sm-4 info">
               <h5 class="link-color text-center">Informações</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque, odio laborum voluptas quisquam accusantium facilis. Optio fugiat, praesentium omnis sequi sapiente hic vel eligendi molestiae quia laboriosam velit maxime.</p>
+              <p class="text-muted">Este sistema tem a finalidade de servir como um controle de entrada e saída de veículos, para o acesso ao estacionamento do novo campus Igarassu.</p>
           </div>
       </div>
   </div>
   <div class="row ml-4">
     <div>
-      <p class="text-muted">© 2020 IF Parking </p>
+      <p class="text-muted">IF Parking © 2020</p>
     </div>  
   </div>
 </footer>
