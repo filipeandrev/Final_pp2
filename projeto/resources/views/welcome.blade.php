@@ -16,22 +16,17 @@
         <div class="col-lg-4">
           <h2>Cadastre seu carro</h2>
           <p>Alunos e professores podem cadastrar seus veículos.</p>
-          <p><a class="btn btn-primary btn-success" href="#" role="button">Mais detalhes &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <h2>Controle de vagas</h2>
           <p>Saiba das vagas disponiveis no estacionamento.</p>
-          <p><a class="btn btn-primary btn-success" href="#" role="button">Mais detalhes &raquo;</a></p>
        </div>
         <div class="col-lg-4">
           <h2>Um ambiente mais organizado</h2>
           <p>Com o controle de entrada e saída de veículos a organização do local fica bem mais acessivel.</p>
-          <p><a class="btn btn-primary btn-success" href="#" role="button">Mais detalhes &raquo;</a></p>
         </div>
       </div>
     </div>
-
-
   </body>
 </html>
 
