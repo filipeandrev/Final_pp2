@@ -22,7 +22,7 @@ class CreateFuncionariosTable extends Migration
             $table->string('cargo');
             $table->string('telefone');
             $table->string('email');
-            $table->string('senha');
+            $table->string('password');
             $table->timestamps();
         });
     }
