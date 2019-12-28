@@ -8,9 +8,9 @@
                 <div class="card-header">{{ __('Cadastre-se') }}</div>
 
                 <div class="card-body">
-                   <div class="position-relative"><button type="button" class="btn btn-info">Sou Aluno</button></div> 
+                   <div class="position-relative btn-alunos"><button type="button" class="btn btn-info">Sou Aluno</button></div> 
 
-                   <div class="position-relative"><button type="button" class="btn btn-info">Sou Funcionário</button></div>
+                   <div class="position-relative btn-funcionarios"><button type="button" class="btn btn-info">Sou Funcionário</button></div>
                     
                     <div class="al">
                     <form method="POST" action="{{ route('register') }}">
@@ -266,6 +266,26 @@
                         </div>
                     </form>
                     </div>
+                    <script>
+                        $(document).ready(function(){
+                         console.log('run');
+
+                           let btnal = $('.btn-alunos');
+                           let btnfunc = $ ('.btn-funcionarios'); 
+
+                         btnal.on('click', function(evt){
+                         evt.preventDefault();
+                         $(".al").css('display', 'block');
+                         $(".func").css('display', 'none');
+                         })
+
+                         btnfunc.on('click', function(evt){
+                         evt.preventDefault();
+                         $(".func").css('display', 'block');
+                         $(".al").css('display', 'none');
+                         })
+                        })
+                    </script>
                 </div>
             </div>
         </div>
