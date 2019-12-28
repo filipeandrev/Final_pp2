@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route:: post ('/cadastro', 'CadastroController@cadastrar') ->name ('cadastro');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
