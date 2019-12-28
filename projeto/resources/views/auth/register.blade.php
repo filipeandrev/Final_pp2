@@ -8,6 +8,10 @@
                 <div class="card-header">{{ __('Cadastre-se') }}</div>
 
                 <div class="card-body">
+                   <div class="position-relative"><button type="button" class="btn btn-info">Sou Aluno</button></div> 
+
+                   <div class="position-relative"><button type="button" class="btn btn-info">Sou Funcionário</button></div>
+                    
                     <div class="al">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -120,7 +124,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-info">
                                     {{ __('Registrar') }}
                                 </button>
                             </div>
@@ -129,6 +133,7 @@
                     </div>
 
                     <div class = "func">
+
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         
@@ -254,7 +259,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-info">
                                     {{ __('Registrar') }}
                                 </button>
                             </div>
