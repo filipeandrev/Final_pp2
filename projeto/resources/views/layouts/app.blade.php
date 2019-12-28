@@ -28,7 +28,7 @@
   </button>
   <div class="collapse navbar-collapse ">
     <div class="navbar-nav">
-    <a class="btn btn-md btn-success btn-success" href="{{ url('/login') }}">Entrar</a>
+    <a class="btn" href="{{ url('/login') }}">Entrar</a>
     </div>
   </div>
         </nav>

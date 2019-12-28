@@ -4,6 +4,7 @@ padding: 0;
 height: 100%;
 }
 
+
 footer{
 background: #0b0c0d;
 width: 100%;
@@ -12,6 +13,16 @@ position: fixed;
 bottom: 0;
 left: 0;
 }
+
+.navbar-nav {
+	position: absolute;
+  left: 1150px;
+  top: 10px;
+}
+
+.position-relative {
+ 	display: inline-block;
+ }
 
 main  {
     margin-top: 1%;
