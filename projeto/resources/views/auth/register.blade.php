@@ -13,7 +13,7 @@
                    <div class="position-relative btn-funcionarios"><button type="button" class="btn btn-info">Sou Funcionário</button></div>
                     
                     <div class="al">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('cadastro') }}">
                         @csrf
                         
                         <input type="hidden" name="tipo" value="aluno">
@@ -134,7 +134,7 @@
 
                     <div class = "func">
 
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('cadastro') }}">
                         @csrf
                         
                         <input type="hidden" name="tipo" value="funcionario">
