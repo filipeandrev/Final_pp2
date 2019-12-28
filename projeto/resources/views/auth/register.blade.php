@@ -16,7 +16,7 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         
-                        
+                        <input type="hidden" name="tipo" value="aluno">
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
 
@@ -137,7 +137,7 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         
-                        
+                        <input type="hidden" name="tipo" value="funcionario">
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
 
