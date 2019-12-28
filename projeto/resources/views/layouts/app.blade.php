@@ -38,27 +38,11 @@
     @yield('content')
 </main>
 
-<footer class="mt-5 bg-dark">
-  <div class="container pt-4">
-      <div class="row">
-          <div class="col-sm-4">
-              <h5 class="link-color">Sobre Nós</h5>
-              <a href="{{ asset('#') }}">Desenvolvedores</a>
-          </div>
-          <div class="col-sm-4">
-              <h5 class="link-color">Suporte</h5>
-              <a href="{{ asset('#') }}">Ajuda</a>
-          </div>
-          <div class="col-sm-4 info">
-              <h5 class="link-color text-center">Informações</h5>
-              <p class="text-muted">Este sistema tem a finalidade de servir como um controle de entrada e saída de veículos, para o acesso ao estacionamento do novo campus Igarassu.</p>
-          </div>
-      </div>
-  </div>
-  <div class="row ml-4">
-    <div>
-      <p class="text-muted">IF Parking © 2020</p>
-    </div>  
-  </div>
+<footer class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>IF PARKING &copy; 2020</small>
+    </div>
+</footer>
+
 </footer>
 </body> 
