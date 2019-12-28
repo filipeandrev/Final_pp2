@@ -13,7 +13,9 @@ position: fixed;
 bottom: 0;
 left: 0;
 }
-
+.func{
+	display:none;
+}
 .navbar-nav {
 	position: absolute;
   left: 1150px;
