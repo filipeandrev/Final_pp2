@@ -21,7 +21,7 @@ class CreateAlunosTable extends Migration
             $table->string('turma');
             $table->string('telefone');
             $table->string('email')->unique();
-            $table->string('senha');
+            $table->string('password');
             $table->timestamps();
         });
     }
