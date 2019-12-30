@@ -4,7 +4,6 @@ padding: 0;
 height: 100%;
 }
 
-
 footer{
 background: #0b0c0d;
 width: 100%;
@@ -18,8 +17,8 @@ left: 0;
 }
 .navbar-nav {
 	position: absolute;
-  left: 1150px;
-  top: 10px;
+  left: 1160px;
+  top: 15px;
 }
 
 .position-relative {
