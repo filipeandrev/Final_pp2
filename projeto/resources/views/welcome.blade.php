@@ -22,8 +22,8 @@
       <h5>Fique por dentro das vagas disponiveis no estacionamento.</h5>
     </div>
     <div class="carousel-item">
-      <h1>Um ambiente mais organizado</h1>
-      <h5>Com o controle de entrada e saída de veículos a organização do local fica bem mais acessivel.</h5>
+      <h1>Um ambiente organizado</h1>
+      <h5>Controlando a localização, entrada e saída de veículos promovemos a disposição dos pontos de atendimento ao cliente, organização dos setores, otimização na área e aumento do número de vagas.</h5>
     </div>
   </div>
 </div>
