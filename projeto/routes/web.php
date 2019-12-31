@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/logout', function(){
+    Auth::logout();
+    return redirect()->route('login');
+});
 
 Route:: post ('/cadastro', 'CadastroController@cadastrar') ->name ('cadastro');
 
