@@ -8,7 +8,7 @@
                 <div class="card-header">Bem-vindo,
                 @if (Auth::check())
                     {{ Auth::user()-> nome }}
-                    @endif !
+                    @endif !>
                 </div>
 
                 <div class="card-body">
@@ -21,6 +21,8 @@
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalExemplo">
 Cadastre seu veículo
 </button>
+
+<a class="btn btn-md btn-info" href="{{ route('logout') }}">Sair</a>
 
 <table class="table table-sm mt-5 text-center">
     <thead class="thead-light">
@@ -42,9 +44,6 @@ Cadastre seu veículo
                 
             </tr>
 </table>
-
-<a class="btn btn-md btn-info" href="{{ route('logout') }}">Sair</a>
-
 
 <!-- Modal -->
 <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
