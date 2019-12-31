@@ -45,7 +45,7 @@
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Recordar minha senha') }}
+                                        {{ __('Lembrar minha senha') }}
                                     </label>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                 <hr width="50%" align="left">
                                 <div>
  
-                                    <p>Não tem registro?</p>
+                                    <p>Não tem registro?
                                     <a class="btn btn-link" href="{{ route('register') }}">
                                         {{ __('Cadastre-se') }}
                                     </a>
