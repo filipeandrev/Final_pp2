@@ -21,7 +21,31 @@
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalExemplo">
 Cadastre seu veículo
 </button>
+
+<table class="table table-sm mt-5 text-center">
+    <thead class="thead-light">
+        <tr>
+            <th>Tipo</th>
+			<th>Modelo</th>
+			<th>Placa</th>
+            <th>Cor</th>
+			<th>Ano</th>
+        </tr>
+        
+        <!-- Onde ficará as informações do veículo após cadastro -->
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                
+            </tr>
+</table>
+
 <a class="btn btn-md btn-info" href="{{ route('logout') }}">Sair</a>
+
+
 <!-- Modal -->
 <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
