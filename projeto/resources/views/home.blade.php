@@ -8,7 +8,7 @@
                 <div class="card-header">Bem-vindo,
                 @if (Auth::check())
                     {{ Auth::user()-> nome }}
-                    @endif !>
+                    @endif !
                 </div>
 
                 <div class="card-body">
