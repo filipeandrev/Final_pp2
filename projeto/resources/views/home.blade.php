@@ -42,7 +42,7 @@ Cadastre seu veículo
 </div>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">Cor:</span>
+    <span class="input-group-text" id="inputGroup-sizing-default">Modelo:</span>
   </div>
   <input type="text" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default">
 </div>
@@ -51,6 +51,18 @@ Cadastre seu veículo
     <span class="input-group-text" id="inputGroup-sizing-default">Placa:</span>
   </div>
   <input type="text" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Cor:</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Ano:</span>
+  </div>
+  <input type="number" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default">
 </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
