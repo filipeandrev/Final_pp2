@@ -18,10 +18,10 @@
                         </div>
                     @endif 
                                      
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalExemplo">
 Cadastre seu veículo
 </button>
-<a class="btn btn-md btn-success" href="{{ route('logout') }}">Sair</a>
+<a class="btn btn-md btn-info" href="{{ route('logout') }}">Sair</a>
 <!-- Modal -->
 <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
