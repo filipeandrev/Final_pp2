@@ -27,3 +27,7 @@ Route:: post ('/cadastro', 'CadastroController@cadastrar') ->name ('cadastro');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/veiculos', 'VeiculoController');
+
+Route::get('/veiculos/{user}', 'VeiculoController@show')->name('veiculos.list');
