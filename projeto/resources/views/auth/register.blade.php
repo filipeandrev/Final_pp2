@@ -5,6 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+                <p><h2>Abra uma conta</h2></p>
+                <p><h4>É rápido e fácil</h4></p>
                 <div class="card-header">{{ __('Cadastre-se') }}</div>
 
                 <div class="card-body">
