@@ -14,7 +14,7 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <h1>Cadastre seu carro</h1>
+      <h1>Cadastre seu veículo</h1>
       <h5>Alunos e professores podem cadastrar seus veículos no estacinamento.</h5>
     </div>
     <div class="carousel-item">
