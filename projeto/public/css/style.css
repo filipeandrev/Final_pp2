@@ -29,3 +29,11 @@ main  {
   width: 120px;
   border-radius: 6px;
 }
+
+.func{
+  display: none;
+}
+
+.position-relative {
+  display: inline-block;
+}
