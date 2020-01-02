@@ -22,13 +22,15 @@
 <body>
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border border-left rounded ">
-  <a class="navbar-brand" href="{{ url('/') }}">IF Parking</a>
+  <a class="navbar-brand" href="{{ url('/') }}">
+     <img class="img-logo" src="{{ asset('img/logo.png') }}">
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse ">
     <div class="navbar-nav">
-    <a class="btn btn-md btn-success btn-success" href="{{ url('/login') }}">Entrar</a>
+    <li class="nav-item"><a class="btn btn-md btn-success" href="{{ url('/login') }}">Entrar</a></li>
     </div>
   </div>
         </nav>
@@ -54,6 +56,7 @@
     <li><a href="http://portal.ifpe.edu.br/campus/igarassu/cursos" class="text-muted">Cursos em Igarassu</a></li>
     </ul>
     </div>
+<<<<<<< HEAD
 
     <div class="col-6 col-md">
     <h4>Fallow Us</h4>
@@ -63,5 +66,7 @@
     <a href="https://www.flickr.com/photos/flickr" class="text-muted"><span class="fab fa-Flickr"></span></a>
     </div>
   </div>
+=======
+>>>>>>> dc6ec29c81544e88e2ec54efe45991c61de0d71d
 </footer>
 </body> 
