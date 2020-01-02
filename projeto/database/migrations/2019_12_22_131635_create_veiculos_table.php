@@ -18,7 +18,7 @@ class CreateVeiculosTable extends Migration
             $table->enum('tipo', ['carro', 'moto', 'bicicleta']);
             $table->unsignedBigInteger('fk_funcionarios_id');
             $table->unsignedBigInteger('fk_alunos_id');
-            $table->unsignedBigInteger('fk_estacionamentos_id');
+            $table->unsignedBigInteger('fk_estacionamentos_id')->nullable();
 
             #foreign keys
             $table->foreign('fk_funcionarios_id')->references('id')->on('funcionarios');
