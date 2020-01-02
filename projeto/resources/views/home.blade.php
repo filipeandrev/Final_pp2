@@ -17,12 +17,27 @@
                             {{ session('status') }}
                         </div>
                     @endif 
-                                     
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalExemplo">
+<!-- <form action="">                 -->
+<form action="{{route('veiculos.create')}}">
+@csrf
+ <button type="submit"  class="btn btn-success"> <!--  data-toggle="modal" data-target="#modalExemplo" -->
 Cadastre seu veículo
 </button>
-
 <a class="btn btn-md btn-info" href="{{ route('logout') }}">Sair</a>
+</form>
+{{ $user =  auth()->user()->id }}
+
+<form action="{{route ('veiculos.list', [$user = auth()->user()->id])}}">
+@csrf 
+  <button type="submit">Ver</button>
+</form>
+
+<div>
+
+</div>
+
+<!-- </form> -->
+
 
 <table class="table table-sm mt-5 text-center">
     <thead class="thead-light">
@@ -46,6 +61,7 @@ Cadastre seu veículo
 </table>
 
 <!-- Modal -->
+<form action="{{ route('veiculos.create') }}">
 <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -89,10 +105,15 @@ Cadastre seu veículo
 </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+        <button type="submit" class="btn btn-primary">Salvar mudanças</button>
       </div>
     </div>
   </div>
+</div>
+</form>
+
+<div class="bloco">
+
 </div>
                     
                 </div>
