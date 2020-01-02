@@ -18,6 +18,9 @@ Route::get('/logout', function(){
     Auth::logout();
     return redirect()->route('login');
 });
+Route:: get ('/funcionario', 'NaController@index' ) ->name ('namoral');
+
+Route:: post ('/login/funcionario', 'Auth\FunController@login' ) ->name ('log');
 
 Route:: post ('/cadastro', 'CadastroController@cadastrar') ->name ('cadastro');
 
