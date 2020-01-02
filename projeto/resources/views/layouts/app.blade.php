@@ -40,33 +40,10 @@
     @yield('content')
 </main>
 
-<footer class="container border-top mt-5 py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <h4>IFparking</h4>
-      <p class="text-muted">&copy 2019 - 2020</p>
-      <h4>Sistema de controle para acesso ao estacionamento do novo campus Igarassu</h4>
-    </div>
-  
-    <div class="col-6 col-md">
-    <h4>Úteis</h4> 
-    <ul class="list-unstyled">
-    <li><a href="https://www.ifpe.edu.br/" class="text-muted">IFPE</a></li>
-    <li><a href="http://portal.ifpe.edu.br/campus/igarassu" class="text-muted">Campus Igarassu</a></li>
-    <li><a href="http://portal.ifpe.edu.br/campus/igarassu/cursos" class="text-muted">Cursos em Igarassu</a></li>
-    </ul>
-    </div>
-<<<<<<< HEAD
-
-    <div class="col-6 col-md">
-    <h4>Fallow Us</h4>
-    <a href="https://twitter.com/twitter" class="text-muted"><span class="fab fa-twitter"></span></a>
-    <a href="https://www.facebook.com/facebookapp" class="text-muted"><span class="fab fa-facebook"></span></a>
-    <a href="https://www.youtube.com/user/YouTube" class="text-muted"><span class="fab fa-youtube"></span></a>
-    <a href="https://www.flickr.com/photos/flickr" class="text-muted"><span class="fab fa-Flickr"></span></a>
-    </div>
-  </div>
-=======
->>>>>>> dc6ec29c81544e88e2ec54efe45991c61de0d71d
-</footer>
+ </div>
+ <footer class="py-4 bg-success text-black-50">
+  <div class="container text-center">
+   <small>IF PARKING &copy; 2020</small>
+   </div>
+ </footer>
 </body> 
