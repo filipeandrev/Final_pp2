@@ -1,7 +1,5 @@
 <?php
-
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Defaults
@@ -12,12 +10,10 @@ return [
     | as required, but they're a perfect start for most applications.
     |
     */
-
     'defaults' => [
         'guard' => 'web',
         'passwords' => 'alunos',
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
@@ -34,20 +30,22 @@ return [
     | Supported: "session", "token"
     |
     */
-
     'guards' => [
         'web' => [
             'driver' => 'session',
             'provider' => 'alunos',
         ],
-
+        'funcionario' => [
+            'driver' => 'session',
+            'provider' => 'funcionario',
+        ],
         'api' => [
             'driver' => 'token',
-            'provider' => 'users',
+            'provider' => 'alunos',
             'hash' => false,
         ],
+        
     ],
-
     /*
     |--------------------------------------------------------------------------
     | User Providers
@@ -64,19 +62,24 @@ return [
     | Supported: "database", "eloquent"
     |
     */
-
     'providers' => [
         'alunos' => [
             'driver' => 'eloquent',
             'model' => App\Aluno::class,
         ],
-
+        'funcionario' => [
+            'driver' => 'eloquent',
+            'model' => App\Funcionario::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Resetting Passwords
@@ -91,27 +94,21 @@ return [
     | they have less time to be guessed. You may change this as needed.
     |
     */
-
     'passwords' => [
+        'funcionario' => [
+            'provider' => 'funcionario',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        'users' => [
+            'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
         'users' => [
             'provider' => 'alunos',
             'table' => 'password_resets',
             'expire' => 60,
-            'throttle' => 60,
         ],
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Password Confirmation Timeout
-    |--------------------------------------------------------------------------
-    |
-    | Here you may define the amount of seconds before a password confirmation
-    | times out and the user is prompted to re-enter their password via the
-    | confirmation screen. By default, the timeout lasts for three hours.
-    |
-    */
-
-    'password_timeout' => 10800,
-
 ];
