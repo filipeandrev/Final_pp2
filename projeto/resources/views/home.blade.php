@@ -24,13 +24,7 @@
 Cadastre seu veículo
 </button>
 <a class="btn btn-md btn-info" href="{{ route('logout') }}">Sair</a>
-</form>
-{{ $user =  auth()->user()->id }}
 
-<form action="{{route ('veiculos.list', [$user = auth()->user()->id])}}">
-@csrf 
-  <button type="submit">Ver</button>
-</form>
 
 <div>
 
