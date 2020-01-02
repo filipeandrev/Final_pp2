@@ -9,7 +9,9 @@
 
                 <div class="card-body">
 
-                    
+                     <div class="position-relative btn-alunos"><button type="button" class="btn btn-info">Sou Aluno</button></div> 
+
+                    <div class="position-relative btn-funcionarios"><button type="button" class="btn btn-info">Sou Funcionário</button></div>
 
                     <div class = 'alu'>
                     <form method="post" action="{{ route('login') }}">
