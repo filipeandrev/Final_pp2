@@ -136,7 +136,26 @@
                         </div>
                     </form>
                 </div>
-  
+   <script>
+                        $(document).ready(function(){
+                         console.log('run');
+
+                           let btnalu = $('.btn-alunos');
+                           let btnfun = $ ('.btn-funcionarios'); 
+
+                         btnalu.on('click', function(evt){
+                         evt.preventDefault();
+                         $(".alu").css('display', 'block');
+                         $(".func").css('display', 'none');
+                         })
+
+                         btnfun.on('click', function(evt){
+                         evt.preventDefault();
+                         $(".func").css('display', 'block');
+                         $(".alu").css('display', 'none');
+                         })
+                        })
+                    </script>
        
             </div>
         </div>
