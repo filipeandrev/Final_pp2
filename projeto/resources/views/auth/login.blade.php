@@ -8,9 +8,13 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
 
+                     
+
+                    <div class = 'alu'>
+                    <form method="post" action="{{ route('login') }}">
+                        @csrf
+                        
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail:') }}</label>
 
@@ -42,11 +46,8 @@
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Lembrar minha senha') }}
-                                    </label>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -57,14 +58,9 @@
                                     {{ __('Entrar') }}
                                 </button>
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Esqueceu sua senha?') }}
-                                    </a>
-                                @endif
                                 <hr width="50%" align="left">
                                 <div>
- 
+                                
                                     <p>Não tem registro?
                                     <a class="btn btn-link" href="{{ route('register') }}">
                                         {{ __('Cadastre-se') }}
@@ -75,6 +71,11 @@
                         </div>
                     </form>
                 </div>
+
+
+                
+  
+       
             </div>
         </div>
     </div>
