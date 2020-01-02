@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Veiculo;
 
 
 class Aluno extends Authenticatable
@@ -30,5 +31,9 @@ class Aluno extends Authenticatable
         'created_at',
         'updated_at'
     ];
+
+    public function veiculos(){
+        return $this->hasMany(Veiculo::class, 'fk_alunos_id', 'id');
+    }
 
 }
